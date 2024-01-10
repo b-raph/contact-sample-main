@@ -1,4 +1,4 @@
-package com.contacts.sample.domain.contacts.contacts
+package com.contacts.sample.app.contacts
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -22,7 +22,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.paging.compose.LazyPagingItems
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import com.contacts.sample.app.contacts.ContainersInformation
 import com.contacts.sample.app.ui.component.LoadingCell
 import com.contacts.sample.app.ui.theme.MediumPadding
 import com.contacts.sample.app.ui.theme.pictureSize

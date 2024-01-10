@@ -42,7 +42,6 @@ import com.contacts.sample.app.ui.component.ToolbarWithTitle
 import com.contacts.sample.app.ui.theme.BorderWith
 import com.contacts.sample.contacts.R
 import com.contacts.sample.domain.Constant.EMPTY_STRING
-import com.contacts.sample.domain.contacts.contacts.ContactsDetailsBottomSheet
 import com.contacts.sample.domain.entity.Contact
 
 private const val INDEX_DEFAULT = 1

@@ -14,6 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
+import com.contacts.sample.app.ui.theme.AppTheme
 import com.contacts.sample.app.ui.theme.MediumPadding
 import com.contacts.sample.app.ui.theme.SmallPadding
 import com.contacts.sample.contacts.R
@@ -41,5 +43,13 @@ internal fun ErrorCell(retry: () -> Unit) {
         color = MaterialTheme.colorScheme.onSecondary
       )
     }
+  }
+}
+
+@Preview
+@Composable
+private fun ErrorCellPreview() {
+  AppTheme {
+    ErrorCell(retry = { })
   }
 }

@@ -15,8 +15,8 @@ import io.mockk.coVerify
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockkStatic
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
+import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -46,7 +46,7 @@ class ContactsDataSourceImplTest {
 
   @Test
   fun `test retrieve contacts when api is ok`() =
-    runBlocking(testScope) {
+    runTest(testScope) {
       val expected = contacts
       coEvery { networkMonitor.getInitializedIsConnected() } returns true
       coEvery {
@@ -55,7 +55,6 @@ class ContactsDataSourceImplTest {
           page = 1
         )
       } returns contactsDto
-
 
       val result = contactsDataSource.retrieveContacts(page = 1)
 
@@ -70,7 +69,7 @@ class ContactsDataSourceImplTest {
 
   @Test
   fun `test retrieve contacts  when dao is ok`() =
-    runBlocking(testScope) {
+    runTest(testScope) {
       val expected = contacts
       coEvery { networkMonitor.getInitializedIsConnected() } returns false
       coEvery {

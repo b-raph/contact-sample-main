@@ -48,4 +48,16 @@ class RetrieveContactsUseCaseTest {
 
     Assert.assertEquals(expected, result)
   }
+
+  @Test
+  fun `retrieve a error when call repository ko`() = runBlocking(testScope) {
+    val expected = PagingData.from(contacts)
+
+    coEvery { contactsRepository.retrieveContacts() } returns flow { emit(expected) }
+
+    var result = PagingData.empty<Contact>()
+    retrieveContactsUseCase.execute().collect { result = it }
+
+    Assert.assertEquals(expected, result)
+  }
 }

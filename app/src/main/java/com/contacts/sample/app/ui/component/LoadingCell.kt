@@ -9,6 +9,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.contacts.sample.app.ui.theme.AppTheme
 import com.contacts.sample.app.ui.theme.CellSize
 import com.contacts.sample.app.ui.theme.SmallPadding
 
@@ -25,5 +27,13 @@ internal fun LoadingCell() {
       modifier = Modifier.align(Alignment.Center),
       color = MaterialTheme.colorScheme.tertiary
     )
+  }
+}
+
+@Preview
+@Composable
+private fun LoadingCellPreview() {
+  AppTheme {
+    LoadingCell()
   }
 }

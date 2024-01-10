@@ -8,7 +8,6 @@ import com.contacts.sample.data.network.NetworkMonitor
 import com.contacts.sample.domain.contacts.usecase.RetrieveContactsUseCase
 import com.contacts.sample.domain.entity.Contact
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -25,7 +24,7 @@ class ContactsViewModel @Inject constructor(
   var contacts = _contacts.asStateFlow()
 
   fun retrieveContacts() {
-    viewModelScope.launch() {
+    viewModelScope.launch {
       _contacts.emit(PagingData.empty())
       retrieveContactsUseCase.execute().cachedIn(viewModelScope).collect {
         _contacts.value = it

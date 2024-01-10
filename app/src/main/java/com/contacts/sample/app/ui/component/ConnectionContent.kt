@@ -11,6 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
+import com.contacts.sample.app.ui.theme.AppTheme
 import com.contacts.sample.app.ui.theme.MediumPadding
 import com.contacts.sample.app.ui.theme.SmallPadding
 import com.contacts.sample.contacts.R
@@ -33,5 +35,13 @@ internal fun ConnectionContent(isNetworkAvailable: Boolean) {
       text = messageConnection,
       style = MaterialTheme.typography.bodyLarge
     )
+  }
+}
+
+@Preview
+@Composable
+private fun ConnectionContentPreview(){
+  AppTheme {
+    ConnectionContent(isNetworkAvailable = false)
   }
 }
