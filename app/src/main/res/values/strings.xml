@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Sample Contacts</string>
     <string name="end_text">Il n\'y a plus de données</string>
-    <string name="error_text">Une erreur est survenue.\nVeuillez verifier votre connexion internet</string>
-    <string name="error_offline_button">mode hors ligne</string>
+    <string name="error_text">Une erreur est survenue.</string>
+    <string name="error_offline_button">Réessayer</string>
     <string name="toolbar_title_contact">Contacts</string>
     <string name="offline">Hors ligne</string>
     <string name="online">En ligne</string>

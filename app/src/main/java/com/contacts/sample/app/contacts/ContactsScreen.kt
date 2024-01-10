@@ -147,13 +147,7 @@ private fun ContactsContent(
           }
         }
 
-        loadState.refresh is LoadState.Error -> {
-          item {
-            EndCell()
-          }
-        }
-
-        loadState.append is LoadState.Error -> {
+        loadState.append is LoadState.Error || loadState.refresh is LoadState.Error -> {
           item {
             ErrorCell(retry = { retry() })
           }

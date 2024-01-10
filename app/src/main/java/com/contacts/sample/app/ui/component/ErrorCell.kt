@@ -37,7 +37,8 @@ internal fun ErrorCell(retry: () -> Unit) {
     OutlinedButton(onClick = retry) {
       Text(
         text = stringResource(id = R.string.error_offline_button),
-        style = MaterialTheme.typography.bodyLarge
+        style = MaterialTheme.typography.bodyLarge,
+        color = MaterialTheme.colorScheme.onSecondary
       )
     }
   }
