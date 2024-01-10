@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sample Contacts</string>
+    <string name="end_text">Il n\'y a plus de données</string>
+    <string name="error_text">Une erreur est survenue.\nVeuillez verifier votre connexion internet</string>
+    <string name="error_offline_button">mode hors ligne</string>
+    <string name="toolbar_title_contact">Contacts</string>
+    <string name="offline">Hors ligne</string>
+    <string name="online">En ligne</string>
+    <string name="button_refresh">Rafraichir</string>
+    <string name="contact_detail_information_personal_details">Détails Personnels</string>
+    <string name="contact_detail_information_location">Localisation</string>
+    <string name="contact_detail_information_contact">Contacts</string>
+    <string name="contact_detail_information_title">Civilité :</string>
+    <string name="contact_detail_information_lastname">Nom :</string>
+    <string name="contact_detail_information_firstname">Prénom :</string>
+    <string name="contact_detail_information_age">Age :</string>
+    <string name="contact_detail_information_age_information">%1$s ans</string>
+    <string name="contact_detail_information_address">Adresse :</string>
+    <string name="contact_detail_information_city">Ville :</string>
+    <string name="contact_detail_information_country">Pays :</string>
+    <string name="contact_detail_information_mail">Email :</string>
+    <string name="contact_detail_information_phone_number">Téléphone :</string>
+</resources>
