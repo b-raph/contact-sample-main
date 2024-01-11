@@ -9,7 +9,6 @@ import javax.inject.Inject
 class RetrieveContactsUseCase @Inject constructor(
   private val contactsRepository: ContactsRepository
 ) {
-
   fun execute(): Flow<PagingData<Contact>> {
     return contactsRepository.retrieveContacts()
   }

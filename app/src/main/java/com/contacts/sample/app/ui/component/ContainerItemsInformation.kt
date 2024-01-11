@@ -21,7 +21,6 @@ import com.contacts.sample.app.ui.theme.SHAPE
 import com.contacts.sample.app.ui.theme.SmallPadding
 import com.contacts.sample.domain.Constant
 
-
 @Composable
 internal fun ContainerItemsInformation(
   titleContainer: String,

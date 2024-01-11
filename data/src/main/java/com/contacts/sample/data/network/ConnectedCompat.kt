@@ -17,7 +17,6 @@ object ConnectedCompat {
   internal interface ConnectedCompat {
     fun isConnected(connectivityManager: ConnectivityManager): Boolean
   }
-
   object MarshMallowImpl : ConnectedCompat {
     override fun isConnected(connectivityManager: ConnectivityManager): Boolean =
       connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)

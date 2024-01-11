@@ -11,7 +11,6 @@ import com.contacts.sample.contacts.R
 import com.contacts.sample.domain.Constant
 import com.contacts.sample.domain.entity.Contact
 
-
 @Composable
 internal fun ContainersInformation(contact: Contact?) {
   PersonalDetails(contact)

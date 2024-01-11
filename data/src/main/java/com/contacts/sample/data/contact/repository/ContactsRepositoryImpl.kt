@@ -10,7 +10,6 @@ import com.contacts.sample.domain.entity.Contact
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-
 class ContactsRepositoryImpl @Inject constructor(
   private val contactsPagingSource: ContactsPagingSource
 ) : ContactsRepository {
